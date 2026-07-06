@@ -113,5 +113,7 @@ Ensure pip is installed alongside Python to fetch external repository libraries
 
 OpenWeatherMap API Credentials:
 To pull live conditions, you need a functional connection key:
+
 ​Navigate to the OpenWeatherMap Portal and register a free developer account.
+
 ​Head over to your dashboard profile menu under API Keys and generate a standard API endpoint token (it typically takes a few minutes to activate globally after generation).
