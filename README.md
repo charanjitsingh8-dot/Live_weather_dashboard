@@ -87,3 +87,31 @@ Upon receiving a successful HTTP 200 OK status, the raw nested JSON payload is e
 
 ​Loading (Pandas Persistence):
 The flattened dictionary is transformed instantly into a single-row structured Pandas DataFrame. The script runs a dynamic environmental file check on the host storage disk. If weather_history.csv is not present, Pandas acts as an initiator, compiling the document layout alongside its defined header strings. If it exists, it falls back to an append configuration (mode='a'), stacking the new data entry linearly to the bottom of the ledger.
+
+
+ ​🛠️ 4. Tech Stack & Prerequisites
+
+
+​This project is built using a highly dependable, data-centric Python stack designed to demonstrate efficient package handling, API interactions, and data storage.
+
+​🖥️ Core Tech Stack
+
+​Language: Python 3.8+ (Leverages native features like f-strings, dictionary .get() fault tolerances, and modular system packaging).
+
+​API Ingestion: requests (v2.31.0+) – The industry standard HTTP client library for Python. Used to handle URL parameters, keep-alive connections, and raw response parsing safely.
+
+​Data Engineering Engine: pandas (v2.2.0+) – A high-performance data manipulation and analysis library. Used in this pipeline to structurally map API fields, maintain the database schema, and commit row insertions safely to storage.
+
+​Secrets Management: python-dotenv (v1.0.1+) – Parses key-value pairs from a separate .env file. Keeps infrastructure keys completely isolated out of source files to follow modern Twelve-Factor App security guidelines.
+
+​📋 System Prerequisites
+
+​Before spinning up the dashboard on your machine, ensure you have the following baseline environments configured 
+
+Package Installer for Python (pip):
+Ensure pip is installed alongside Python to fetch external repository libraries
+
+OpenWeatherMap API Credentials:
+To pull live conditions, you need a functional connection key:
+​Navigate to the OpenWeatherMap Portal and register a free developer account.
+​Head over to your dashboard profile menu under API Keys and generate a standard API endpoint token (it typically takes a few minutes to activate globally after generation).
